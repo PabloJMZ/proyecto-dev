@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white-color: #FCFFFC;
+    --white-color-complement:#F2F2F2;
+    --black-color:  #040F0F;
+    --black-color-complement: #2D3A3A;
+    --complement-color1: #248232;
+    --complement-color2:  #2BA84A;
+    --complement-color3:#616178;
+}
+body{
+    background-color: var(--white-color);
+    font-family: "Montserrat",Arial, Helvetica, sans-serif;
+}
+.section-random{
+    padding: 10px 30px;
+    line-height: 1.5;
+    width: 100%;
+    min-height: 100px;
+    background-color: red;
+}
+.section-random .button-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.section-random .link{
+    color: var(--complement-color1);
+    text-decoration: underline;
+    font-size: medium;
+    line-height: 2;
+}
+.root-random-container{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 8px;
+    background-color: var(--white-color-complement);
+    line-height: 1.5;
+    transition: all 1.3s ease;
+    min-height: 200px;
+}
+.root-random-container:hover{
+    min-height: 400px;
+}
+.root-random-container .title{
+    font-size: larger;
+    color: var(--black-color);
+    line-height: 2;
+}
+.root-random-container .subtitle{
+    font-size: medium;
+    color: var(--black-color-complement);
+    line-height: 2;
+    margin-top: 20px;
+}
+.root-random-container .paragraph{
+    color: var(--black-color-complement);
+}
+.root-random-container li{
+    margin-left: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="section-random">
+        <div class="root-random-container">
+            <div id="root-random">
+                <h2 class="title">Busqueda Aleatoria</h2>
+                <p class="paragraph">
+                    Descubre nuevos y fascinantes temas que quizás no conozcas o ni siquiera sepas que existen. Atrévete a explorar, porque aprender solo requiere deseo, motivación e información. ¡Y en eso estoy aquí para ayudarte! En esta plataforma, te proporcionaremos los recursos necesarios para ampliar tus conocimientos. Desde enlaces a páginas web informativas hasta materiales de referencia, nuestro objetivo es facilitarte el acceso a la información que necesitas para aprender. ¡No hay límites para lo que puedes descubrir y dominar!
+                </p>
+            </div>
+            <div class="button-container">
+                <button class="button-main" id="main-button">Buscar Tema</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
